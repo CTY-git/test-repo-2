@@ -1,0 +1,62 @@
+<%
+/**
+ This application is for demonstration use only. It contains known application security
+vulnerabilities that were created expressly for demonstrating the functionality of
+application security testing tools. These vulnerabilities may present risks to the
+technical environment in which the application is installed. You must delete and
+uninstall this demonstration application upon completion of the demonstration for
+which it is intended. 
+
+HCL DISCLAIMS ALL LIABILITY OF ANY KIND RESULTING FROM YOUR USE OF THE APPLICATION
+OR YOUR FAILURE TO DELETE THE APPLICATION FROM YOUR ENVIRONMENT UPON COMPLETION OF
+A DEMONSTRATION. IT IS YOUR RESPONSIBILITY TO DETERMINE IF THE PROGRAM IS APPROPRIATE
+OR SAFE FOR YOUR TECHNICAL ENVIRONMENT. NEVER INSTALL THE APPLICATION IN A PRODUCTION
+ENVIRONMENT. YOU ACKNOWLEDGE AND ACCEPT ALL RISKS ASSOCIATED WITH THE USE OF THE APPLICATION.
+
+HCL AltoroJ
+(c) Copyright HCL Corp. 2018, 2022 All Rights Reserved.
+*/
+%> 
+
+<!-- BEGIN FOOTER -->
+<%@page import="java.util.Date"%>
+<%@page import="java.util.Calendar"%>
+</tr>
+</table>
+<div id="footer" style="width: 99%;">
+    <a id="HyperLink5" href="<%=request.getContextPath()%>/index.jsp?content=privacy.htm">Privacy Policy</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a id="HyperLink6" href="<%=request.getContextPath()%>/index.jsp?content=security.htm">Security Statement</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a id="HyperLink6" href="<%=request.getContextPath()%>/status_check.jsp">Server Status Check</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp; 
+    <a id="HyperLink6" href="<%=request.getContextPath()%>/swagger/index.html">REST API</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp; 
+    &copy;&nbsp;<% out.print(Calendar.getInstance().get(Calendar.YEAR)); %> Altoro Mutual, Inc.
+
+    <div class="disclaimer">
+    <table>
+        <tbody>
+        <tr>
+        <td class="footer">
+        The AltoroJ website is published by HCL Software for the sole purpose of
+        demonstrating the effectiveness of HCL products in detecting web application
+        vulnerabilities and website defects. This site is not a real banking site. Similarities,
+        if any, to third party products and/or websites are purely coincidental. This site is
+        provided "as is" without warranty of any kind, either express or implied. HCL does
+        not assume any risk in relation to your use of this website. For more information,
+        please go to <a id="HyperLink7" href="https://www.hcltechsw.com/products/appscan" >https://www.hcltechsw.com/products/appscan</a>.<br /><br />
+
+        Copyright &copy; <% out.print(Calendar.getInstance().get(Calendar.YEAR)); %>, HCL Technologies Limited | www.hcltechsw.com, All rights reserved.</td>
+        <td>
+        <a href="https://www.hcltechsw.com/appscan/v10"><img src="<%=request.getContextPath()%>/images/banner02.jpg" alt="" height=60/></a>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
+<!-- END FOOTER -->

@@ -1,0 +1,1599 @@
+{
+    "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+    "version": "2.1.0",
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "HCL AppScan Static Analyzer"
+                }
+            },
+            "artifacts": [
+                {
+                    "location": {
+                        "uri": "file:///AltoroJ-AltoroJ-3.2/WebContent/disclaimer.htm"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "file:///WebContent/util/serverStatusCheck.html"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "file:///WebContent/util/swfobject.js"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "file:///admin/login.jsp"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "file:///bank/apply.jsp"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "file:///bank/customize.jsp"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "file:///login.jsp"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "file:///subscribe.jsp"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "file:///util/serverStatusCheckService.jsp"
+                    }
+                }
+            ],
+            "results": [
+                {
+                    "ruleId": "SA526985033",
+                    "message": {
+                        "text": "Allowing untrusted site by passing user controlled input"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0
+                                },
+                                "region": {
+                                    "startLine": 19
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "AltoroJ-AltoroJ-3.2\\WebContent\\disclaimer.htm"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "b3ccc175-6171-ee11-826a-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "905906491"
+                    },
+                    "properties": {
+                        "Severity": "Medium",
+                        "Status": "Open",
+                        "IssueType": "Validation.Required.URL.Redirect"
+                    }
+                },
+                {
+                    "ruleId": "SA3458078903",
+                    "message": {
+                        "text": "Insecure Use of InnerHTML or OuterHTML"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 1
+                                },
+                                "region": {
+                                    "startLine": 46
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "WebContent\\util\\serverStatusCheck.html"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "bbccc175-6171-ee11-826a-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "1341721248"
+                    },
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting.Reflected"
+                    }
+                },
+                {
+                    "ruleId": "SA3458078903",
+                    "message": {
+                        "text": "Insecure Use of InnerHTML or OuterHTML"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 1
+                                },
+                                "region": {
+                                    "startLine": 67
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "WebContent\\util\\serverStatusCheck.html"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "c7ccc175-6171-ee11-826a-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "2007236697"
+                    },
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting.Reflected"
+                    }
+                },
+                {
+                    "ruleId": "SA3458078903",
+                    "message": {
+                        "text": "Insecure Use of InnerHTML or OuterHTML"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 1
+                                },
+                                "region": {
+                                    "startLine": 74
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "WebContent\\util\\serverStatusCheck.html"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "caccc175-6171-ee11-826a-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "407759866"
+                    },
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting.Reflected"
+                    }
+                },
+                {
+                    "ruleId": "SA3458078903",
+                    "message": {
+                        "text": "Insecure Use of InnerHTML or OuterHTML"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 1
+                                },
+                                "region": {
+                                    "startLine": 53
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "WebContent\\util\\serverStatusCheck.html"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "c1ccc175-6171-ee11-826a-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "911223063"
+                    },
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting.Reflected"
+                    }
+                },
+                {
+                    "ruleId": "SA3458078903",
+                    "message": {
+                        "text": "Insecure Use of InnerHTML or OuterHTML"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 1
+                                },
+                                "region": {
+                                    "startLine": 60
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "WebContent\\util\\serverStatusCheck.html"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "c4ccc175-6171-ee11-826a-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "-688253768"
+                    },
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting.Reflected"
+                    }
+                },
+                {
+                    "ruleId": "SA526985033",
+                    "message": {
+                        "text": "Allowing untrusted site by passing user controlled input"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0
+                                },
+                                "region": {
+                                    "startLine": 35
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "AltoroJ-AltoroJ-3.2\\WebContent\\disclaimer.htm"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "b5ccc175-6171-ee11-826a-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "-1372265470"
+                    },
+                    "properties": {
+                        "Severity": "Medium",
+                        "Status": "Open",
+                        "IssueType": "Validation.Required.URL.Redirect"
+                    }
+                },
+                {
+                    "ruleId": "SA3575288709",
+                    "message": {
+                        "text": "Insecure Use of Document.Write"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0
+                                },
+                                "region": {
+                                    "startLine": 50
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "AltoroJ-AltoroJ-3.2\\WebContent\\disclaimer.htm"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "b8ccc175-6171-ee11-826a-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "2098752939"
+                    },
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting.Reflected"
+                    }
+                },
+                {
+                    "ruleId": "SA3458078903",
+                    "message": {
+                        "text": "Insecure Use of InnerHTML or OuterHTML"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 1
+                                },
+                                "region": {
+                                    "startLine": 48
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "WebContent\\util\\serverStatusCheck.html"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "beccc175-6171-ee11-826a-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "374787823"
+                    },
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting.Reflected"
+                    }
+                },
+                {
+                    "ruleId": "SA3458078903",
+                    "message": {
+                        "text": "Insecure Use of InnerHTML or OuterHTML"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 2
+                                },
+                                "region": {
+                                    "startLine": 4
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "WebContent\\util\\swfobject.js"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "cdccc175-6171-ee11-826a-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "897393410"
+                    },
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting.Reflected"
+                    }
+                },
+                {
+                    "ruleId": "SA3114779752",
+                    "message": {
+                        "text": "Cross-Site Scripting"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 3
+                                },
+                                "region": {
+                                    "startLine": 47
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "javax.servlet.jsp.JspWriter.print(String):void org.apache.jsp.admin.login_jsp"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "40ed2ac9-6fc1-ee11-9f01-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "156586313"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 3
+                                                    },
+                                                    "region": {
+                                                        "startLine": 43
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.ServletRequest.getAttribute(String):Object"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Source"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "getAttribute"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 3
+                                                    },
+                                                    "region": {
+                                                        "startLine": 47
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.jsp.JspWriter.print(String):void"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Sink"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "error"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting"
+                    }
+                },
+                {
+                    "ruleId": "SA3114779752",
+                    "message": {
+                        "text": "Cross-Site Scripting"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 4
+                                },
+                                "region": {
+                                    "startLine": 38
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "javax.servlet.jsp.JspWriter.print(String):void org.apache.jsp.bank.apply_jsp"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "43ed2ac9-6fc1-ee11-9f01-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "-1107752921"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 4
+                                                    },
+                                                    "region": {
+                                                        "startLine": 34
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.http.HttpSession.getAttribute(String):Object"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Source"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "getAttribute"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 4
+                                                    },
+                                                    "region": {
+                                                        "startLine": 38
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.jsp.JspWriter.print(String):void"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Sink"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "error"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting"
+                    }
+                },
+                {
+                    "ruleId": "SA2012543643",
+                    "message": {
+                        "text": "Open Redirect"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 5
+                                },
+                                "region": {
+                                    "startLine": 35
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "javax.servlet.http.HttpServletResponse.sendRedirect(String):void org.apache.jsp.bank.customize_jsp"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "46ed2ac9-6fc1-ee11-9f01-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "834806115"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 5
+                                                    },
+                                                    "region": {
+                                                        "startLine": 32
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.ServletRequest.getParameter(String):String"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Source"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "getParameter"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 5
+                                                    },
+                                                    "region": {
+                                                        "startLine": 35
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.http.HttpServletResponse.sendRedirect(String):void"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Sink"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "content"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "Validation.Required.URL.Redirect"
+                    }
+                },
+                {
+                    "ruleId": "SA3114779752",
+                    "message": {
+                        "text": "Cross-Site Scripting"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 5
+                                },
+                                "region": {
+                                    "startLine": 44
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "javax.servlet.jsp.JspWriter.print(String):void org.apache.jsp.bank.customize_jsp"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "49ed2ac9-6fc1-ee11-9f01-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "437305354"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 5
+                                                    },
+                                                    "region": {
+                                                        "startLine": 44
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.ServletRequest.getParameter(String):String"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Source"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "getParameter"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 5
+                                                    },
+                                                    "region": {
+                                                        "startLine": 44
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.jsp.JspWriter.print(String):void"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Sink"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "Temp#10@0"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting"
+                    }
+                },
+                {
+                    "ruleId": "SA3114779752",
+                    "message": {
+                        "text": "Cross-Site Scripting"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 6
+                                },
+                                "region": {
+                                    "startLine": 40
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "javax.servlet.jsp.JspWriter.print(String):void org.apache.jsp.login_jsp"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "4ced2ac9-6fc1-ee11-9f01-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "-401334160"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 6
+                                                    },
+                                                    "region": {
+                                                        "startLine": 36
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.http.HttpSession.getAttribute(String):Object"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Source"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "getAttribute"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 6
+                                                    },
+                                                    "region": {
+                                                        "startLine": 40
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.jsp.JspWriter.print(String):void"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Sink"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "error"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting"
+                    }
+                },
+                {
+                    "ruleId": "SA3114779752",
+                    "message": {
+                        "text": "Cross-Site Scripting"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 7
+                                },
+                                "region": {
+                                    "startLine": 40
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "javax.servlet.jsp.JspWriter.print(Object):void org.apache.jsp.subscribe_jsp"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "4fed2ac9-6fc1-ee11-9f01-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "1245612586"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 7
+                                                    },
+                                                    "region": {
+                                                        "startLine": 40
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.ServletRequest.getAttribute(String):Object"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Source"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "getAttribute"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 7
+                                                    },
+                                                    "region": {
+                                                        "startLine": 40
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.jsp.JspWriter.print(Object):void"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Sink"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "Temp#10@0"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "properties": {
+                        "Severity": "Medium",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting"
+                    }
+                },
+                {
+                    "ruleId": "SA3114779752",
+                    "message": {
+                        "text": "Cross-Site Scripting"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 8
+                                },
+                                "region": {
+                                    "startLine": 4
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "javax.servlet.jsp.JspWriter.print(String):void org.apache.jsp.util.serverStatusCheckService_jsp"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "52ed2ac9-6fc1-ee11-9f01-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "-1064428139"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 8
+                                                    },
+                                                    "region": {
+                                                        "startLine": 4
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.ServletRequest.getParameter(String):String"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Source"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "getParameter"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 8
+                                                    },
+                                                    "region": {
+                                                        "startLine": 4
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.jsp.JspWriter.print(String):void"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Sink"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "request.getParameter(\"HostName\")"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting"
+                    }
+                }
+            ],
+            "columnKind": "utf16CodeUnits",
+            "conversion": {
+                "tool": {
+                    "driver": {
+                        "name": "sarif-tools",
+                        "fullName": "sarif-tools https://github.com/microsoft/sarif-tools/",
+                        "version": "2.0.0",
+                        "properties": {
+                            "file": "/Users/user/Downloads/Issues_February-2-2024_10-22-AM.sarif",
+                            "modified": "2024-02-25T16:06:57.899981",
+                            "processed": "2024-02-25T08:39:43.873724"
+                        }
+                    }
+                },
+                "invocation": "/usr/local/bin/sarif copy /Users/user/Downloads/Issues_February-2-2024_10-22-AM.sarif /Users/user/Downloads/Issues_February-20-2024_10-47-PM.sarif"
+            }
+        },
+        {
+            "tool": {
+                "driver": {
+                    "name": "HCL AppScan Static Analyzer"
+                }
+            },
+            "artifacts": [
+                {
+                    "location": {
+                        "uri": "file:///AltoroJ_3.2/WebContent/disclaimer.htm"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "file:///WebContent/index.jsp"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "file:///WebContent/admin/admin.jsp"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "file:///com\\ibm\\security\\appscan\\altoromutual\\api\\AccountAPI.java"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "file:///com\\ibm\\security\\appscan\\Log4AltoroJ.java"
+                    }
+                },
+                {
+                    "location": {
+                        "uri": "file:///com\\ibm\\security\\appscan\\altoromutual\\util\\DBUtil.java"
+                    }
+                }
+            ],
+            "results": [
+                {
+                    "ruleId": "SA3830232470",
+                    "message": {
+                        "text": "Insecure Use of Document.Write"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0
+                                },
+                                "region": {
+                                    "startLine": 50
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "AltoroJ_3.2\\WebContent\\disclaimer.htm"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "b7b55e58-fdcf-ee11-9f02-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "-688298817"
+                    },
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting.Reflected"
+                    }
+                },
+                {
+                    "ruleId": "SA2525631456",
+                    "message": {
+                        "text": "Command Injection"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 1
+                                },
+                                "region": {
+                                    "startLine": 65
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "java.lang.Runtime.exec(String[]):Process org.apache.jsp.WebContent.index_jsp"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "2cb65e58-fdcf-ee11-9f02-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "764134059"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 1
+                                                    },
+                                                    "region": {
+                                                        "startLine": 38
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.ServletRequest.getParameter(String):String"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Source"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "getParameter"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 1
+                                                    },
+                                                    "region": {
+                                                        "startLine": 56
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "java.lang.StringBuilder.append(String):StringBuilder"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "None"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "content"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 1
+                                                    },
+                                                    "region": {
+                                                        "startLine": 56
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "java.lang.StringBuilder.append(String):StringBuilder"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "None"
+                                                }
+                                            },
+                                            "state": {}
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 1
+                                                    },
+                                                    "region": {
+                                                        "startLine": 56
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "java.lang.StringBuilder.toString():String"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "None"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "new StringBuilder().append(path).append(\"\\\") . java.lang.StringBuilder.append(content) . java.lang.StringBuilder.append(\"\\\"\")"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 1
+                                                    },
+                                                    "region": {
+                                                        "startLine": 65
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "java.lang.Runtime.exec(String[]):Process"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Sink"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "new String()[][3]"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "Injection.OS"
+                    }
+                },
+                {
+                    "ruleId": "SA307524684",
+                    "message": {
+                        "text": "Cross-Site Scripting"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 2
+                                },
+                                "region": {
+                                    "startLine": 61
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "javax.servlet.jsp.JspWriter.print(String):void org.apache.jsp.WebContent.admin.admin_jsp"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "d8b55e58-fdcf-ee11-9f02-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "-356850471"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 2
+                                                    },
+                                                    "region": {
+                                                        "startLine": 58
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.http.HttpSession.getAttribute(String):Object"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Source"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "getAttribute"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 2
+                                                    },
+                                                    "region": {
+                                                        "startLine": 61
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.jsp.JspWriter.print(String):void"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Sink"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "error"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "properties": {
+                        "Severity": "High",
+                        "Status": "Open",
+                        "IssueType": "CrossSiteScripting"
+                    }
+                },
+                {
+                    "ruleId": "SA3201763813",
+                    "message": {
+                        "text": "Inappropriate Encoding for Output Context"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 3
+                                },
+                                "region": {
+                                    "startLine": 35
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "java.io.PrintWriter.print(Object):void com\\ibm\\security\\appscan\\altoromutual\\api\\AccountAPI.java"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "48f4565e-fdcf-ee11-9f02-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "-1248699849"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 3
+                                                    },
+                                                    "region": {
+                                                        "startLine": 35
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "javax.servlet.ServletRequest.getParameter(String):String"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Source"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "getParameter"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 3
+                                                    },
+                                                    "region": {
+                                                        "startLine": 35
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "com.ibm.security.appscan.altoromutual.api.AccountAPI.getAccounts(HttpServletRequest):Response"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "None"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "wafl_local_0.getParameter(\"param1\")"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "index": 3
+                                                    },
+                                                    "region": {
+                                                        "startLine": 35
+                                                    }
+                                                },
+                                                "logicalLocations": [
+                                                    {
+                                                        "fullyQualifiedName": "java.io.PrintWriter.print(Object):void"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Sink"
+                                                }
+                                            },
+                                            "state": {
+                                                "taint": {
+                                                    "text": "local1"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "properties": {
+                        "Severity": "Medium",
+                        "Status": "Open",
+                        "IssueType": "Validation.EncodingRequired"
+                    }
+                },
+                {
+                    "ruleId": "SA2677164671",
+                    "message": {
+                        "text": "Improper Handling of Exceptional Conditions"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 4
+                                },
+                                "region": {
+                                    "startLine": 35
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "com.ibm.security.appscan.Log4AltoroJ():void"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "45f4565e-fdcf-ee11-9f02-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "-553533188"
+                    },
+                    "properties": {
+                        "Severity": "Low",
+                        "Status": "Open",
+                        "IssueType": "ErrorHandling.RevealDetails.StackTrace"
+                    }
+                },
+                {
+                    "ruleId": "SA926353406",
+                    "message": {
+                        "text": "Allowing untrusted site by passing user controlled input"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 0
+                                },
+                                "region": {
+                                    "startLine": 19
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "AltoroJ_3.2\\WebContent\\disclaimer.htm"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "b1b55e58-fdcf-ee11-9f02-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "577127503"
+                    },
+                    "properties": {
+                        "Severity": "Medium",
+                        "Status": "Open",
+                        "IssueType": "Validation.Required.URL.Redirect"
+                    }
+                },
+                {
+                    "ruleId": "SA1166528380",
+                    "message": {
+                        "text": "Authentication.Entity"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "index": 5
+                                },
+                                "region": {
+                                    "startLine": 119
+                                }
+                            },
+                            "logicalLocations": [
+                                {
+                                    "fullyQualifiedName": "com.ibm.security.appscan.altoromutual.util.DBUtil.getConnection():Connection"
+                                }
+                            ]
+                        }
+                    ],
+                    "guid": "7bf4565e-fdcf-ee11-9f02-14cb65725114",
+                    "fingerprints": {
+                        "hash/v5": "-1788234472"
+                    },
+                    "properties": {
+                        "Severity": "Medium",
+                        "Status": "Open",
+                        "IssueType": "Authentication.Entity"
+                    }
+                }
+            ],
+            "columnKind": "utf16CodeUnits",
+            "conversion": {
+                "tool": {
+                    "driver": {
+                        "name": "sarif-tools",
+                        "fullName": "sarif-tools https://github.com/microsoft/sarif-tools/",
+                        "version": "2.0.0",
+                        "properties": {
+                            "file": "/Users/user/Downloads/Issues_February-20-2024_10-47-PM.sarif",
+                            "modified": "2024-02-25T15:42:12.174882",
+                            "processed": "2024-02-25T08:39:43.873724"
+                        }
+                    }
+                },
+                "invocation": "/usr/local/bin/sarif copy /Users/user/Downloads/Issues_February-2-2024_10-22-AM.sarif /Users/user/Downloads/Issues_February-20-2024_10-47-PM.sarif"
+            }
+        }
+    ]
+}
