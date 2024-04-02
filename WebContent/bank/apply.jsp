@@ -31,16 +31,16 @@ IBM AltoroJ
 			<span><p><b>No application is needed.</b>To approve your new $10000 Altoro Mutual Gold Visa<br />with an 7.9% APR simply enter your password below.</p>
 			<p><span id="_ctl0__ctl0_Content_Main_message" style="color:#FF0066;font-size:12pt;font-weight:bold;">
 			<%
-				java.lang.String error = (String)request.getSession(true).getAttribute("loginError");
+			java.lang.String error = (String)request.getSession(true).getAttribute("loginError");
 		
-				if (error != null && error.trim().length() > 0){
-					request.getSession().removeAttribute("loginError");
-					out.print(error);
-				}
+			if (error != null && error.trim().length() > 0){
+				request.getSession().removeAttribute("loginError");
+				out.print(org.apache.commons.lang3.StringEscapeUtils.escapeHtml4(error));
+			}
 			%>
 			</span></p>			
 			<form method="post" name="Credit" action="ccApply"><table border=0><tr><td>Password:</td><td><input type="password" name="passwd"></td></tr><tr><td></td><td><input type="submit" name="Submit" value="Submit"></td></tr></table></form></span>
 		</div>
     </td>	
 </div>
-<jsp:include page="/footer.jspf"/>   
+<jsp:include page="/footer.jspf"/>  
