@@ -37,7 +37,7 @@ IBM AltoroJ
 		
 		if (error != null && error.trim().length() > 0){
 			request.getSession().removeAttribute("loginError");
-			out.print(error);
+			out.print(org.apache.taglibs.standard.tag.rt.core.Util.esc(error));
 		}
 		%>
 		</span></p>

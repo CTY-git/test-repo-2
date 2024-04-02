@@ -37,12 +37,12 @@ IBM AltoroJ
 				}
 			}
 		%>
-		<script><%=(request.getParameter("lang")==null)?"":ServletUtil.addUnVulnerableName(request.getParameter("lang"))%></script>
+		<script><%= (request.getParameter("lang")==null) ? "" : ServletUtil.addUnVulnerableName(request.getParameter("lang")) %></script>
 		<h1>Customize Site Language</h1>
 		
 		<form method="post">
 		  <p>
-		  Current Language: <%=(request.getParameter("lang")==null)?"":request.getParameter("lang")%>
+		  Current Language: <%= (request.getParameter("lang")==null) ? "" : org.apache.commons.lang.StringEscapeUtils.escapeHtml(request.getParameter("lang")) %>
 		  </p>
 		
 		  <p>
@@ -57,5 +57,7 @@ IBM AltoroJ
 		</div>
     </td>	
 </div>
+
+<jsp:include page="/footer.jspf"/>  
 
 <jsp:include page="/footer.jspf"/>  

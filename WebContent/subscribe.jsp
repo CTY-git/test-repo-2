@@ -33,11 +33,11 @@ IBM AltoroJ
 			<p>We recognize that things are always evolving and changing here at Altoro Mutual.
 			Please enter your email below and we will automatically notify of noteworthy events.</p>
 			
-			<form action="doSubscribe" method="post" name="subscribe" id="subscribe" onsubmit="return confirmEmail(txtEmail.value);">
+			<form action="doSubscribe" method="post" name="subscribe" id="subscribe" onsubmit="return confirmEmail(document.getElementById('txtEmail').value);">
 			  <table>
 			    <tr>
 			      <td colspan="2">
-			        <div style="font-weight: bold; font-size: 12px; color: red;" id="message"><%=(request.getAttribute("message_subscribe")!=null)?request.getAttribute("message_subscribe"):"" %></div>
+			        <div style="font-weight: bold; font-size: 12px; color: red;" id="message"><%= (request.getAttribute("message_subscribe")!=null) ? request.getAttribute("message_subscribe") : "" %></div>
 			      </td>
 			    </tr>
 			    <tr>
