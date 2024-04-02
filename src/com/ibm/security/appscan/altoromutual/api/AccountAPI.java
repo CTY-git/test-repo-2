@@ -29,15 +29,15 @@ public class AccountAPI extends AltoroAPI {
 
 		// HttpSession session = request.getSession(true);
 		String response;
-	
+
 		
 		try {
 			Account[] account = (OperationsUtil.getUser(request)).getAccounts();
 			// System.out.println("We got so far!");
 			response = "{\"Accounts\":\n[\n";
 			for (int i = 0; i < account.length; i++) {
-				response = response + "{ \"Name\" : \"" + account[i].getAccountName()
-						+ "\", \"id\": \"" + account[i].getAccountId() + "\"}";
+				response = response + "{ \"Name\" : \"" + encodeForJSON(account[i].getAccountName())
+						+ "\", \"id\": \"" + encodeForJSON(account[i].getAccountId()) + "\"}";
 				if (i < account.length - 1)
 					response = response + ",\n";
 			}
@@ -48,6 +48,10 @@ public class AccountAPI extends AltoroAPI {
 		}
 
 		return Response.status(Response.Status.OK).entity(response).type(MediaType.APPLICATION_JSON_TYPE).build();
+	}
+
+	private String encodeForJSON(String input) {
+		return input.replace("\\", "\\\\").replace("\"", "\\\"");
 	}
 
 	// Method to return details about a specific account
