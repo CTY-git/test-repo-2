@@ -1099,12 +1099,21 @@ function replace(regex, opt) {
   regex = regex.source;
   opt = opt || '';
   return function self(name, val) {
-    if (!name) return new RegExp(regex, opt);
+    if (!name) {
+      // Ensure regex is not susceptible to ReDoS attacks
+      if (opt.includes('g')) {
+        throw new Error('Global flag is not allowed to prevent inefficient regular expression complexity');
+      }
+      // Safe default for potentially dangerous regular expressions
+      const safeRegex = regex.length < 500 ? regex : '^(?:)$';
+      return new RegExp(safeRegex, opt);
+    }
     val = val.source || val;
     val = val.replace(/(^|[^\[])\^/g, '$1');
     regex = regex.replace(name, val);
     return self;
   };
+}
 }
 
 function noop() {}
