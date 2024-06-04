@@ -1,5 +1,5 @@
 /**
- This application is for demonstration use only. It contains known application security
+ * This application is for demonstration use only. It contains known application security
 vulnerabilities that were created expressly for demonstrating the functionality of
 application security testing tools. These vulnerabilities may present risks to the
 technical environment in which the application is installed. You must delete and
@@ -41,8 +41,8 @@ public class AdminServlet extends HttpServlet {
 		
 		//add account
 		if (request.getRequestURL().toString().endsWith("addAccount")){
-			String username = request.getParameter("username");
-			String acctType = request.getParameter("accttypes");
+			String username = sanitizeInput(request.getParameter("username"));
+			String acctType = sanitizeInput(request.getParameter("accttypes"));
 			if (username == null || acctType == null || username.trim().length() == 0 || acctType.trim().length() == 0)
 				message = "An error has occurred. Please try again later.";
 			else {
@@ -54,11 +54,11 @@ public class AdminServlet extends HttpServlet {
 		
 		//add user
 		else if (request.getRequestURL().toString().endsWith("addUser")){
-			String firstname = request.getParameter("firstname");
-			String lastname = request.getParameter("lastname");
-			String username = request.getParameter("username");
-			String password1 = request.getParameter("password1");
-			String password2 = request.getParameter("password2");
+			String firstname = sanitizeInput(request.getParameter("firstname"));
+			String lastname = sanitizeInput(request.getParameter("lastname"));
+			String username = sanitizeInput(request.getParameter("username"));
+			String password1 = sanitizeInput(request.getParameter("password1"));
+			String password2 = sanitizeInput(request.getParameter("password2"));
 			if (username == null || username.trim().length() == 0
 				|| password1 == null || password1.trim().length() == 0
 				|| password2 == null || password2.trim().length() == 0)
@@ -87,9 +87,9 @@ public class AdminServlet extends HttpServlet {
 		
 		//change password
 		else if (request.getRequestURL().toString().endsWith("changePassword")){
-			String username = request.getParameter("username");
-			String password1 = request.getParameter("password1");
-			String password2 = request.getParameter("password2");
+			String username = sanitizeInput(request.getParameter("username"));
+			String password1 = sanitizeInput(request.getParameter("password1"));
+			String password2 = sanitizeInput(request.getParameter("password2"));
 			if (username == null || username.trim().length() == 0
 					|| password1 == null || password1.trim().length() == 0
 					|| password2 == null || password2.trim().length() == 0)
@@ -118,6 +118,13 @@ public class AdminServlet extends HttpServlet {
 		request.getSession().setAttribute("message", message);
 		response.sendRedirect("admin.jsp");
 		return ;
+	}
+	
+	private String sanitizeInput(String input) {
+		if (input != null) {
+			return input.replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+		}
+		return null;
 	}
 
 }
