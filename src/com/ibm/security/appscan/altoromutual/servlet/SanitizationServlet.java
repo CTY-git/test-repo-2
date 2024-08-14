@@ -40,6 +40,12 @@ public class SanitizationServlet extends HttpServlet {
 		dispatcher.forward(request, response);   
       }
 	
+	/**
+	* This method is used to sanitize the input string by replacing certain malicious characters. 
+	* 
+	* @param parameter Input string that needs to be sanitized.
+	* @return Sanitized string where single quotes ('), double quotes (") and ampersands (&) are replaced by their respective HTML character entities.
+	*/
 	protected String goodSanitationForIdAttribute(String parameter) {
 		 String  parameter1 = parameter;
 		    parameter1 = parameter1.replaceAll("'", "&#39;");
