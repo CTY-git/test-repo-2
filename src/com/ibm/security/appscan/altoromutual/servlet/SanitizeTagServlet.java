@@ -41,6 +41,13 @@ public class SanitizeTagServlet extends HttpServlet {
 		dispatcher.forward(request, response);   
 	}
 
+	/**
+	* A method for sanitizing an HTML tag to prevent security vulnerabilities by replacing special characters with their respective HTML entities
+	* 
+	* @param parameter This is the HTML tag string that needs to be sanitized
+	* @return This returns the sanitized version of the HTML tag string
+	*/
+	
 	protected String goodSanitationForTag(String parameter) {
 		 String  parameter1 = parameter;
 		    parameter1 = parameter1.replaceAll("&", "&amp;");
