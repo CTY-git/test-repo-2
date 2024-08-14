@@ -38,6 +38,16 @@ import com.ibm.security.appscan.altoromutual.util.ServletUtil;
 public class TransferServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
+	/**
+	* This method handles GET HTTP requests received by the server, providing an additional layer of backend abstraction.
+	* In this case, it is designed to reroute these GET requests to the doPost method.
+	* 
+	* @param req  Client's HTTP request data containing parameters, headers, etc.
+	* @param resp Server's HTTP response data to be sent to the client.
+	* @throws ServletException if an input or output error is detected when the servlet handles the GET request
+	* @throws IOException if the request for the GET could not been handled
+	*/
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
@@ -47,6 +57,19 @@ public class TransferServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	
+	/**
+	* This method handles POST requests to perform a transfer operation from one account to another.
+	* First, it checks if a user is logged in. If not, it redirects to the login page.
+	* Then, it gets the account id, the target account id (to which the amount is transferred), and the transfer amount from the request parameters.
+	* Then it processes the transfer using the `doServletTransfer` method from `OperationsUtil`.
+	* Finally, it sets a message regarding the transfer status in the request and forwards the request and response to the "transfer.jsp" page.
+	* 
+	* @param request HttpServletRequest object that contains the request from the client to the server
+	* @param response HttpServletResponse object that contains the response from the server to the client
+	* @throws ServletException if servlet-specific error occurs
+	* @throws IOException if an input-output error occurs
+	*/
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
